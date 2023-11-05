@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121111;
+  text-transform: capitalize;
+  }
+  
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  }
+  
+  header h1 {
+  color: orange;
+  font-size: 75px;
+  text-align: center;
+  margin: 0;
+  }
+  
+  /* Navigation Bar Styles (nav) */
+  #nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  }
+  
+  #nav a, #nav button {
+  text-decoration: none;
+  color: orangered;
+  margin: 10px;
+  font-weight: lighter;
+  }
+  #nav button {
+  border:none;
+  background-color: #333;
+  cursor: pointer;
+  }
+  
+  /* Styles for Main Content (main) and Details Section (details) */
+  #main, #details {
+  width: 30%;
+  margin-top: 10px;
+  }
+  
+  #main {
+  max-width: 30%;
+  }
+  
+  /* Styles for Main Content and Details Section (lists and list items) */
+  #main ul, #details ul {
+  list-style: none;
+  padding: 0;
+  }
+  
+  #main li, #details li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  }
+  
+  #main li {
+  cursor: pointer;
+  }
+  
+  #main li:hover, #details li a:hover {
+  box-shadow: 0 0 15px rgba(245, 217, 108, 0.2);
+  }
+  
+  /* Styles for Details Section and Details Section (lists and list items) */
+  #details {
+  width: 65%;
+  max-width: 65%;
+  }
+  #details ul li ul li:hover{
+  cursor: pointer;
+  }
+  
+  /* Style for the first list item in the details section */
+  #details ul li:first-child {
+  font-weight: bold;
+  color: orangered;
+  }
+  #details ul li:not(:first-child){
+  margin: 0 10px;
+  }
+  #details ul ul li{
+  padding: 0 2px;
+  margin: 0 10px;
+  border-radius: 5px;
+  border-width: 0;
+  border-style: none;
+  border-color: transparent;
+  }
